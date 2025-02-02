@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #444dff, #070b4c);
+}
+
+/* Main container styles */
+.main {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container styles */
+.login {
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+    background-color: #f0f0f058;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(195, 195, 195, 0.1);
+}
+
+.login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.textbox {
+    margin-bottom: 10px;
+}
+
+.textbox input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.textbox input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Image container styles */
+.imgg {
+    width: 50%;
+}
+
+.imgg {
+    flex: 1; /* Let the image container take remaining space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.imgg img {
+    max-width: 100%; /* Make sure the image does not overflow */
+    max-height: 100%; /* Set the maximum height to fill the entire viewport */
+    width: 50%;
+    height: auto;
+}

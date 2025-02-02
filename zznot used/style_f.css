@@ -1,0 +1,294 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #174879; */
+    background: linear-gradient(to left, rgb(22, 27, 126) 0%, rgb(157, 242, 255) 100%);
+    color: white;
+  }
+.logo{
+    padding: 5px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+}
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+  }
+    /* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles for the navigation */
+  /* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  } */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: #0d0352;
+    border-radius: 10%;
+}
+input[type="submit"], input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #009dff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #0435b1;
+}
+  /* .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  } */
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    background-color: #c8eaf9;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+/* Header styles */
+header {
+    text-align: center;
+}
+
+.header-photos {
+    /* Add styles for header photos */
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+    background-image: url(photos/ciet3.jpg);
+    border: 0%;
+    margin: 0%;
+    
+}
+
+/* Main section styles */
+.main {
+    text-align: center;
+}
+
+.section {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section > div {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.photo-section {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+}
+.photo-section>div{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    animation: slide 6s linear 1s infinite alternate;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    33.33% {
+        transform: translateX(0%);
+    }
+    66.66% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.photo-container img {
+    flex-shrink: 0;
+    height: 300px;
+}
+
+/* for student page-------------- */
+.welcome{
+    padding-top: 5px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: right;
+}
+ .dist{
+    margin-top: 1px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+} 
+.dist1{
+    width: 70%;
+    height: 500px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    
+}
+.dist2{
+    width: 20%;
+    height: 500px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+/*for card section*/
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the card */
+
+  .card {
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto; /* Prevent cards from growing */
+    
+  }
+  .card img {
+    width: 150px;
+    height: 150px;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 5px;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009dff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0435b1;
+  }
+  
